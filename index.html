@@ -2,15 +2,64 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Kevin Herrera | WDD 131 </title>
-    <meta name="description" content="wdd131 course, the purpose is to show how much i learned">
-    <meta name="author" content="kevin herrera">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 | Dynamic Web Fundamentals - Kevin Herrera</title>
+    <meta name="description" content="the basic structure for a WebPage">
+    <meta name="author" content="Kevin Herrera">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header>
+        <h1>WDD 131 | Dynamic Web Fundamentals - Kevin Herrera</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/kevin-herrera-a41b052ba/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng&id=p41#p41">Scripture</a>
+            <a href="final_project">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <div class="card1-container">
+                <div class="card1-content">
+                    <p>My name is Kevin Herrera, and I am a 23-year-old student at BYU. I have a strong passion for programming and sports. Originally from Venezuela, I have a deep affinity for Argentina, its culture, and its people. I am also a dedicated member of The Church of Jesus Christ of Latter-day Saints, where I actively serve in two callings, finding joy in serving others.</p>
+                </div>
+                <div class="card1-image">
+                    <img src="images/kevin_profile_pic_11zon.jpeg" alt="Descripción de la imagen 1">
+                </div>
+            </div>
+            <div class="card1-image2">
+                <h3>Santa Fe, Argentina</h3>
+                <div class="underline"></div>
+                <div class="image2-container">
+                    <img src="images/argentina_flag.jpg" alt="Descripción de la imagen 2">
+                    <p>Argentina boasts a rich cultural heritage, renowned for its passion for soccer, the tango, and the asado (barbecue). Buenos Aires, its capital, is often referred to as the 'Paris of South America' due to its European-influenced architecture and vibrant nightlife. The diverse landscapes, from the Iguazu Falls to Patagonia, make Argentina a unique tourist destination.</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <h3>Documentation</h3>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+            </ul>
+            <h3>Tools</h3>
+            <ul>
+                <li><a href="https://code.visualstudio.com/">VS Code</a></li>
+                <li><a href="https://developer.chrome.com/docs/devtools/">Chrome DevTools</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&#169  <span id="currentyear"></span> | Kevin Herrera | Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
