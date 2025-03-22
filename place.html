@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place activity</title>
+    <meta name="description" content="Place activity to show responsive desing, images and text in small devices">
+    <meta name="author" content="Kevin Herrera">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="with flags"> Barcelona, Spain </h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/spain-hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="images/spain-hero-medium.webp" media="(min-width: 500px)">
+                <img src="images/spain-hero-small.webp" alt="Spain Hero Image" width="500" height="250">
+            </picture>
+            <div class="data-box">
+                <div class="box-title">
+                    <span class="data-title">Spain Data</span>
+                </div>
+                <p>
+                    Area: 505,990 km²<br>
+                    Population: 47,329,981<br>
+                    Capital: Madrid<br>
+                    Languages: Spanish, Catalan, Galician, Basque, Aranese<br>
+                    Currency: Euro (€)<br>
+                    Time Zone: CET (UTC+1), CEST (UTC+2) in summer<br>
+                    Calling Code: +34<br>
+                    Internet TLD: .es<br>
+                </p>
+            </div>
+            
+            <div class="weather-box">
+                <div class="box-title">
+                    <span class="weather-title">Weather</span>
+                </div>
+                <p id="weather-data"></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&#169;  <span id="currentyear"></span> | Kevin Herrera | Argentina</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
