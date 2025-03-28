@@ -1,10 +1,35 @@
 @media (min-width: 601px) {
     main {
+        max-width: 1200px;
+        margin: 20px auto;
         grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 
     nav ul.navigation {
-        display: flex; 
-        flex-direction: row; 
+        display: flex;
+        flex-direction: row;
+    }
+
+    .res-grid {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+
+    .res-grid section {
+        padding: 30px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .res-grid section h3 {
+        font-size: 1.5em;
+    }
+
+    .res-grid section p {
+        font-size: 1.1em;
+    }
+
+    .res-grid section img {
+        max-height: 300px;
+        object-fit: cover;
     }
 }
