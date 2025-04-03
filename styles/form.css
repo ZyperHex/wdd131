@@ -1,0 +1,150 @@
+/* --- Estilos Generales del Cuerpo --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- Styles for Header, Main y Footer --- */
+header, main, footer {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---  Header Styles  --- */
+header {
+    background-color: #800020;
+    color: white;
+    text-align: center;
+}
+
+/* ---  Estilos del Formulario  --- */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ---  Estilos para Fieldset dentro del Formulario  --- */
+fieldset {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+/* ---  Estilos para la Leyenda del Formulario  --- */
+form legend {
+    font-weight: bold;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* ---  Estilos para las Etiquetas del Formulario  --- */
+form label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+/* --- Marcado de Campos Obligatorios --- */
+label[for="productName"]::after,
+label:has(+ .rating)::after,
+label[for="installationDate"]::after {
+    content: " *";
+    color: red;
+}
+
+/* ---  Estilos para Inputs, Selects y Textareas del Formulario  --- */
+form input, form select, form textarea {
+    width: calc(100% - 32px); 
+    padding: 16px;
+    margin-bottom: 20px; 
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* --- Estilos para el Focus de Inputs, Selects y Textareas --- */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* --- Estilos para Mensajes de Error en el Formulario --- */
+form .error {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+/* --- Estilos para la Sección de Calificación (Rating) --- */
+.rating label {
+    font-size: 1.5rem; 
+    color: #866c1c;
+    display: inline-block; 
+    margin-right: 10px; 
+}
+
+/* --- Estilos para Radio Buttons y Checkboxes --- */
+form input[type="radio"], form input[type="checkbox"] {
+    width: auto;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* --- Estilos para la Sección de Características (Features) --- */
+.features label {
+    display: block; 
+    margin-bottom: 10px;
+}
+
+.features input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* --- Estilos para el Botón de Enviar (Submit) --- */
+input[type="submit"] {
+    background-color: #0356af;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+input[type="submit"]:hover {
+    background-color: #01438a;
+}
+
+/* --- Estilos para el Footer --- */
+footer {
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* --- Media Queries para Dispositivos Móviles --- */
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+
+    form input,
+    form select,
+    form textarea {
+        width: 100%;
+    }
+}
