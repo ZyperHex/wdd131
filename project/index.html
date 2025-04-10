@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Obelisk of Buenos Aires</title>
+  <meta name="description" content="Obelisk of Buenos Aires" />
+  <meta name="author" content="Kevin Herrera" />
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <script src="scripts/main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="left-col"></div>
+
+  <main class="main-content">
+    <header>
+      <div class="header-left">
+        <img src="images/logo.webp" alt="Obelisk Logo" class="logo" loading="lazy">
+        <h1>Obelisk of Buenos Aires</h1>
+      </div>
+      <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      <nav id="mainNav">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <picture>
+        <source srcset="images/obelisk-hero-small.webp" media="(max-width: 600px)" loading="lazy">
+        <source srcset="images/obelisk-hero-medium.webp" media="(max-width: 1024px)" loading="lazy">
+        <img src="images/obelisk-hero-large.webp" alt="Obelisk of Buenos Aires" loading="lazy">
+      </picture>
+      <div class="hero-text">
+        <h2>Discover the Iconic Obelisk</h2>
+        <p>Learn about the historical landmark that defines the heart of Buenos Aires.</p>
+      </div>
+    </section>
+
+    <section class="columns">
+      <div class="left-column">
+        <div class="highlight">
+          <h3>Fun Fact</h3>
+          <button id="factBtn">Show Fun Fact</button>
+          <p id="factText" class="fun-fact-text"></p>
+        </div>
+        <div class="highlight">
+          <h3>Symbol of Buenos Aires</h3>
+          <p>The Obelisk represents the heart of the city—an unmistakable reference point and gathering place for major events, celebrations, and demonstrations. Its presence reflects the city's identity, energy, and cultural pride.</p>
+        </div>
+        <div class="highlight">
+          <h3>Architectural Wonder</h3>
+          <p>Created by renowned modernist architect Alberto Prebisch, the Obelisk showcases clean lines and monumental scale. Its bold, minimalist design broke away from traditional styles and marked a turning point in Argentina's urban aesthetic.</p>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <section class="form-section">
+          <h3>Leave Us a Comment</h3>
+          <form id="commentForm">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </section>
+
+        <section class="comments-section">
+          <h4>Comments</h4>
+          <ul id="commentsList"></ul>
+        </section>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 | Kevin Herrera | Obelisk Project</p>
+      <a href="siteplan.html">Wireframe</a>    
+    </footer>
+  </main>
+
+  <div class="right-col"></div>
+</body>
+</html>

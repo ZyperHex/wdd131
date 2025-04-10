@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History - Obelisk of Buenos Aires</title>
+  <meta name="description" content="History of the Obelisk of Buenos Aires">
+  <meta name="author" content="Kevin Herrera">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <script src="scripts/main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="left-col"></div>
+
+  <main class="main-content">
+    <header>
+      <div class="header-left">
+        <img src="images/logo.webp" alt="Obelisk Logo" class="logo" loading="lazy">
+        <h1>Obelisk of Buenos Aires</h1>
+      </div>
+      <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      <nav id="mainNav">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html" class="active">History</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="history-section">
+        <h2>History of the Obelisk</h2>
+        <div class="history-content">
+  
+          <div class="history-card">
+            <img src="images/obelisk-bsas-construction.webp" alt="Construction of the Obelisk">
+            <div class="history-card-content">
+              <h3>Built in 1936</h3>
+              <p>It was built in record time to commemorate the 400th anniversary of the first founding of Buenos Aires.</p>
+            </div>
+          </div>
+  
+          <div class="history-card">
+            <img src="images/historical-photo-1930.webp" alt="Aerial view of the Obelisk">
+            <div class="history-card-content">
+              <h3>Strategic Location</h3>
+              <p>It is located at the intersection of two of the most important avenues: Corrientes and 9 de Julio. It was conceived as a modern icon.</p>
+            </div>
+          </div>
+  
+          <div class="history-card">
+            <img src="images/obelisk-sunset.webp" alt="Restored Obelisk">
+            <div class="history-card-content">
+              <h3>Restorations</h3>
+              <p>It has been restored several times throughout history, the most recent being in 2020 on the occasion of its anniversary.</p>
+            </div>
+          </div>
+  
+          <div class="history-card">
+            <img src="images/obelisk-during-celebrations.webp" alt="Events at the Obelisk">
+            <div class="history-card-content">
+              <h3>Center of Celebrations</h3>
+              <p>It is the chosen place for sports celebrations, protests, and cultural events. An undeniable symbol of Buenos Aires' identity.</p>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+  
+      <footer>
+        <p>© 2025 | Kevin Herrera | Obelisk Project</p>
+        <a href="siteplan.html">Wireframe</a>
+      </footer>
+    </main>
+  
+    <div class="right-col"></div>
+  
+    <script>
+      document.getElementById('menuToggle').addEventListener('click', function () {
+        document.getElementById('navLinks').classList.toggle('active');
+      });
+    </script>
+  </body>
+  </html>
+  

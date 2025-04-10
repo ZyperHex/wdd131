@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Visit the Obelisk</title>
+  <meta name="description" content="Plan your visit to the Obelisk of Buenos Aires" />
+  <meta name="author" content="Kevin Herrera" />
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <script src="scripts/main.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="left-col"></div>
+
+  <main class="main-content">
+    <header>
+      <div class="header-left">
+        <img src="images/logo.webp" alt="Obelisk Logo" class="logo" loading="lazy">
+        <h1>Obelisk of Buenos Aires</h1>
+      </div>
+      <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      <nav id="mainNav">
+        <ul id="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="visit.html">Visit</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+        <picture>
+            <source srcset="images/obelisk-hero-small.webp" media="(max-width: 600px)" loading="lazy">
+            <source srcset="images/obelisk-hero-medium.webp" media="(max-width: 1024px)" loading="lazy">
+            <img src="images/obelisk-hero-large.webp" alt="Obelisk of Buenos Aires" loading="lazy">
+          </picture>
+      <div class="hero-text">
+        <h2>Plan Your Visit</h2>
+        <p>Find out how to get to the Obelisk and get in touch with us.</p>
+      </div>
+    </section>
+
+    <section class="columns">
+      <div class="left-column">
+        <div class="highlight">
+          <h3>Getting There</h3>
+          <p>The Obelisk is located at the intersection of Avenida 9 de Julio and Avenida Corrientes, in the very heart of Buenos Aires. Easily accessible by subway (lines B, C, and D), buses, and on foot.</p>
+        </div>
+
+        <div class="highlight">
+          <h3>Best Times to Visit</h3>
+          <p>Visit during daylight hours for the best views and photos. Nighttime offers a stunning illuminated view of the monument and its surroundings.</p>
+        </div>
+
+        <div class="highlight">
+          <h3>Map</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.500697016713!2d-58.38414508477075!3d-34.603738580459434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac9c637e3ed%3A0xb5029e8dd20bc0fd!2sObelisco!5e0!3m2!1sen!2sar!4v1682603000000"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="right-column">
+        <section class="form-section">
+          <h3>Contact Us</h3>
+          <form id="contactForm">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+          </form>
+        </section>
+      </div>
+    </section>
+
+    <div class="image-gallery">
+        <figure>
+          <img src="images/aerial-view-obelisk.webp" alt="aerial view of the Obelisk showing the intersections">
+          <figcaption>Aerial view of the Obelisk.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/obelisk-sunset.webp" alt="Obelisk at sunset">
+          <figcaption>A view of the Obelisk at sunset.</figcaption>
+        </figure>
+        <figure>
+          <img src="images/obelisk-at-night.webp" alt="Obelisk at night">
+          <figcaption>The Obelisk illuminated at night.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 | Kevin Herrera | Obelisk Project</p>
+      <a href="siteplan.html">Wireframe</a>
+    </footer>
+  </main>
+
+  <div class="right-col"></div>
+</body>
+</html>

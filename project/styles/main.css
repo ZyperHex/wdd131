@@ -1,0 +1,343 @@
+/* ===================================================
+   🎨 CSS BASE - Variables, Tipografía y Reset
+=================================================== */
+:root {
+  --primary-color: #A3D9FF;        /* Cielo suave: usado para botones, links, detalles */
+  --secondary-color: #FFF3B0;      /* Crema cálido: usado como fondo general */
+  --tertiary-color: #A67B5B;       /* Marrón: usado para títulos y bordes decorativos */
+  --background-color: #FFFFFF;     /* Blanco: usado para tarjetas e interiores */
+  --heading-font: 'Playfair Display', serif;
+  --body-font: 'Open Sans', sans-serif;
+  --accent-font: 'Courier Prime', monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, label, input, textarea, button, li, a {
+  color: #000 !important;
+}
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1200px) 1fr;
+}
+
+/* ===================================================
+   🧱 ESTRUCTURA DEL LAYOUT
+=================================================== */
+.left-col,
+.right-col {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, var(--primary-color), var(--background-color));
+}
+
+.left-col { grid-column: 1; }
+.right-col { grid-column: 3; }
+
+.main-content {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Columnas internas para secciones */
+.columns {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+.left-column, .right-column {
+  flex: 1;
+  min-width: 280px;
+}
+
+/* ===================================================
+   🧭 HEADER Y NAVEGACIÓN
+=================================================== */
+header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+}
+
+#menuToggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===================================================
+   🦸 HERO SECTION
+=================================================== */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 80vh;
+  max-height: 700px;
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.hero picture,
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-text {
+  position: absolute;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-text h2 {
+  font-family: var(--heading-font);
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-family: var(--body-font);
+  font-size: 1.2rem;
+}
+
+/* ===================================================
+   ✨ DESTACADOS / HIGHLIGHTS
+=================================================== */
+.highlight {
+  background-color: #f3f3f3;
+  border-left: 4px solid var(--tertiary-color);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: var(--accent-font);
+}
+
+/* ===================================================
+   📬 FORMULARIO
+=================================================== */
+.form-section {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: var(--body-font);
+}
+
+/* ===================================================
+   🔘 BOTONES
+=================================================== */
+button {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: var(--body-font);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7dc4f2;
+}
+
+/* ===================================================
+   💬 COMENTARIOS
+=================================================== */
+.comments-section {
+  margin-top: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  font-family: var(--body-font);
+}
+
+.comments-section h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.comments-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.comments-section li {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+/* ===================================================
+   🖼️ GALERÍAS DE IMÁGENES
+=================================================== */
+.image-gallery,
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
+  ;
+}
+
+
+.image-gallery img,
+.gallery img {
+  width: 100%;
+  height: 200px; /* <-- Tamaño uniforme */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-gallery figcaption,
+.gallery figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* ========================
+   Universal Image Styling
+======================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ===================================================
+   🧾 SECCIONES ESPECÍFICAS 
+=================================================== */
+
+/* ========================
+   History Cards Styling
+======================== */
+
+.history-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.history-card {
+  background-color: var(--background-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.history-card:hover {
+  transform: translateY(-4px);
+}
+
+.history-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.history-card-content {
+  padding: 1rem;
+}
+
+.history-card-content h3 {
+  color: var(--tertiary-color);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.history-card-content p {
+  font-family: var(--body-font);
+  font-size: 0.95rem;
+}
+
+
+ /* Visit Section */
+
+ /* Contact Section */
+
+ /*gallery section */
+ .content h2,
+ .content p {
+  text-align: center;
+}
+
+/* ===================================================
+   🦶 FOOTER
+=================================================== */
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
