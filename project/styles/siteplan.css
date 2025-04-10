@@ -179,3 +179,8 @@ p {
 code {
     font-family: var(--accent-font);
 }
+
+footer a {
+    color: #000;
+    text-decoration: underline;
+}
